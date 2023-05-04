@@ -17,6 +17,11 @@ public class PlayerFactory {
 
         }
 
+        else if(filePath.endsWith(".mkv")) {
+            player = new MKVPlayer();
+
+        }
+
         return player;
     }
 }
