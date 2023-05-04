@@ -8,7 +8,7 @@ public class Main {
 
         //if the fileName ends with .mp3 call MP3Player ->play() method
         //if the fileName ends with .mp4 call MP4Player ->play() method
-
+       /*
        if(filePath.endsWith(".mp3")){
             MP3Player mp3Player = new MP3Player();
             mp3Player.play(filePath);
@@ -17,7 +17,15 @@ public class Main {
         else if(filePath.endsWith(".mp4")) {
             MP4Player mp4Player = new MP4Player();
             mp4Player.play(filePath);
-        }
+        } */
+
+        //using the factory method design pattern to initialize the player object
+        PlayerFactory factory = new PlayerFactory();
+        Player player = factory.getInstance(filePath);
+        player.play(filePath);
+
+
+
 
     }
 }
