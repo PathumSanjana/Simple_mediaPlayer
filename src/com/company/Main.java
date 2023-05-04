@@ -7,6 +7,9 @@ public class Main {
         MP3Player mp3Player = new MP3Player();
         mp3Player.play("C://songs/test.mp3");
 
+        MP4Player mp4Player = new MP4Player();
+        mp4Player.play("C://movies/test.mp4");
+
     }
 }
 
