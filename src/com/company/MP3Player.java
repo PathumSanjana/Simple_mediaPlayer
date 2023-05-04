@@ -1,6 +1,6 @@
 package com.company;
 
-public class MP3Player {
+public class MP3Player implements Player {
 
 
         public void play(String filePath){
