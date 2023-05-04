@@ -22,9 +22,12 @@ public class Main {
         //using the factory method design pattern to initialize the player object
         PlayerFactory factory = new PlayerFactory();
         Player player = factory.getInstance(filePath);
-        player.play(filePath);
-
-
+        if(player != null) {
+            player.play(filePath);
+        }
+        else{
+            System.out.println("The file format is not supported");
+        }
 
 
     }
