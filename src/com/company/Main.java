@@ -36,3 +36,5 @@ public class Main {
 
 //let's assume that we are going to create an application which can be used to play audio/video files
 // MP3 files, MP4 files, MKV files etc will be supported.
+//after a while you get a requirement to display image files in this player.
+//and you saw that there is a library written by someone else which can be used to display images.
