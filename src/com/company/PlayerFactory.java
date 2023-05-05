@@ -28,7 +28,7 @@ public class PlayerFactory {
            // player = new ImageViewer(); //this error comes because the ImageViewer class is incompatible with Player interface.
             //to sort out this problem we can use Adaptor class
 
-            player = new ImageAdaptor();
+            player = new ImageAdaptor(new ImageViewer());
         }
 
         return player;
